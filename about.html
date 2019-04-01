@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <style>
+    .contact_form-fullSize {
+      width: 100%;
+      height: 100%;
+      background-color: #0a291e;
+      color: #fff;
+      padding: 140px 0 60px;
+    }
+
+    .form-control {
+      background: transparent;
+      border: transparent;
+      border-bottom: 1px solid #ccc;
+      color: #50d2aa;
+    }
+
+    .form-control:focus {
+      background: transparent !important;
+      color: #50d2aa;
+      box-shadow: inherit;
+      border-bottom: 1px solid #50d2aa;
+    }
+
+    .form-row label {
+      color: #fff;
+    }
+
+    .contact_form-btn {
+      background: #3fa46a;
+      padding: 10px 0;
+      min-width: 200px;
+      border-radius: 25px;
+      color: #fff;
+      border: 1px solid transparent;
+      transition: all .5s;
+    }
+    .contact_form-btn:hover {
+      background: #17181e;
+      border: 1px solid #50d2aa;
+      color: #50d2aa;
+    }
+    .contact_form-btn-icon{
+      padding-left: 5px;
+    }
+
+    /* .contact_form-btn:hover .contact_form-btn-icon{
+      padding-left: 15px;
+    } */
+
+
+    .contact_info {
+      color: #fff;
+      display: flex;
+    }
+
+    .contact_info-text {
+      transition: all .4s;
+    }
+
+    .contact_info-icon {
+      width: 50px;
+      transition: all .4s;
+    }
+
+    .contact_info-icon--inner {
+      font-size: 32px;
+      padding: inherit;
+      line-height: 50px;
+    }
+
+    .contact_info--link {
+      color: #fff;
+      transition: all .4s;
+    }
+
+    .contact_info:hover .contact_info--link {
+      color: #50d2aa;
+    }
+
+    .contact_info:hover .contact_info-icon {
+      color: #beffec;
+    }
+
+    .contact_info:hover .contact_info-text {
+      color: #50d2aa;
+    }
+
+    .map {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+
+    .dot {
+      display: inline-block;
+      background-color: #fff;
+      border-radius: 50%;
+      margin-right: 3px;
+      width: 6px;
+      height: 6px;
+      animation: typing 1s linear infinite;
+      transition: all .4s;
+    }
+
+    .dot:nth-child(1) {
+      animation-delay: .1s;
+    }
+
+    .dot:nth-child(2) {
+      animation-delay: .3s;
+    }
+
+    .dot:nth-child(3) {
+      animation-delay: .5s;
+    }
+
+
+
+    @keyframes typing {
+      0% {
+        transform: translate(0, 0)
+      }
+
+      50% {
+        transform: translate(0, 15px)
+      }
+
+      100% {
+        transform: translate(0, 0)
+      }
+    }
+
+    .contact_info:hover .dot:nth-child(1) {
+      background-color: #3fa46a;
+    }
+
+    .contact_info:hover .dot:nth-child(2) {
+      background-color: #50d2aa;
+    }
+
+    .contact_info:hover .dot:nth-child(3) {
+      background-color: #1e824c;
+    }
+
+
+    /* Responsive
+================================================== */
+
+    /* mobile ---  320px - 767px    */
+
+    @media screen and (min-width: 320px) {}
+
+    /*  notebook small  ---  992px - 1999px    */
+
+    @media screen and (min-width:992px) {
+      .contact_info:hover p {
+        letter-spacing: .5px;
+      }
+
+      .contact_info:hover .contact_info--link {
+        letter-spacing: .5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="main-navigation">
+      <div class="menu-icon">
+        <i class="fa fa-bars fa-2x mobile-menu-opener"></i>
+      </div>
+      <h1 class="web_logo">
+        <a href="index.html" class="web_logo-link">M</a>
+      </h1>
+      <ul class="main_menu" id="main_menu">
+        <li class="main_menu-item"><a href="index.html" class="main_menu-item--link">Home</a></li>
+        <li class="main_menu-item"><a href="about.html" class="main_menu-item--link main_menu-item--active">about</a>
+        </li>
+        <li class="main_menu-item"><a href="travel.html" class="main_menu-item--link">Travel</a></li>
+        <li class="main_menu-item"><a href="inspiration.html" class="main_menu-item--link">Inspiration</a></li>
+        <li class="main_menu-item"><a href="#" class="main_menu-item--link">Creativity</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact_form-fullSize">
+      <div class="container">
+        <div class="text-center">
+            <h4 class="post-box-title mb-5">contact</h4>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-12">
+                <div class="contact_info pb-4">
+                  <div class="contact_info-icon">
+                    <i class="fa fa-map-marker contact_info-icon--inner"></i>
+                  </div>
+                  <p class="pt-3 contact_info-text">Tsinamdzghvrishvili Street #60, Tbilisi, Georgia</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-12">
+                <div class="contact_info pb-4">
+                  <div class="contact_info-icon">
+                    <i class="fa fa-mobile-phone contact_info-icon--inner"></i>
+                  </div>
+                  <p class="pt-3 contact_info-text">598 22 88 66</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-12">
+                <div class="contact_info pb-4">
+                  <div class="contact_info-icon">
+                    <!-- <i class="fa fa-envelope contact_info-icon--inner"></i> -->
+                    <div class="dots">
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                    </div>
+                  </div>
+                  <p class="pt-3 contact_info-text">megi.akhalkatsi@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-12">
+                <div class="contact_info pb-4">
+                  <div class="contact_info-icon">
+                    <i class="fa fa-facebook contact_info-icon--inner"></i>
+                  </div>
+                  <a href="https://www.facebook.com/megi.akhalkatsi"
+                    class="pt-3 contact_info--link">fb.com/MegiAkhalkatsi</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map col-12 col-lg-8">
+            <div class="contact_map">
+              <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190556.83414368174!2d44.69876667195004!3d41.73237417984777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x61d084ede2576ea3!2sTbilisi!5e0!3m2!1sen!2sge!4v1553500085068"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+            <h4 class="post-box-title mb-5 mt-5">Get In Touch</h4>
+        </div>
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationTooltip01">Name</label>
+                <input type="text" class="form-control" id="validationTooltip01" placeholder="Name" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+                <div class="invalid-tooltip">
+                    Please input your name.
+                  </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationTooltip02">Email</label>
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="Email" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+                <div class="invalid-tooltip">
+                    Please input your email.
+                  </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <label for="validationTooltip03">Subject</label>
+                  <input type="text" class="form-control" id="validationTooltip03" placeholder="Subject" required>
+                  <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                  <div class="invalid-tooltip">
+                    Please choose a subject.
+                  </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-12">
+                  <label for="validationTooltip04">Message</label>
+                  <textarea class="form-control" id="validationTooltip04" rows="3" placeholder="Message" required></textarea>
+                  <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                  <div class="invalid-tooltip">
+                      Message is required.
+                    </div>
+              </div>
+            </div>
+            <button class="btn contact_form-btn text-uppercase mt-5 mb-3" type="submit">send message <span class="fa fa-long-arrow-right contact_form-btn-icon"></span></button>
+          </form>
+
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="page_footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <ul class="social-icons">
+            <li class="list-inline-item wow rotateInDownLeft"><a href="" class="social_icon-link fa fa-google"></a></li>
+            <li class="list-inline-item wow rotateInDownLeft"><a href="" class="social_icon-link fa fa-facebook"></a>
+            </li>
+            <li class="list-inline-item wow rotateInDownLeft"><a href="" class="social_icon-link fa fa-twitter"></a>
+            </li>
+            <li class="list-inline-item wow rotateInDownLeft"><a href="" class="social_icon-link fa fa-instagram"></a>
+            </li>
+            <li class="list-inline-item wow rotateInDownLeft"><a href="" class="social_icon-link fa fa-youtube"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center pt-3 pb-3">
+          <!-- <div>Copyrights &copy 2019. Personal Blog Template by Megi Akhalkatsi</div> -->
+          <div class="wow slideInUp">&copy 2019 - Designed and Developed by Megi Akhalkatsi</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center pt-3 pb-3 wow slideInUp">
+          <a href="#" class="text-capitalize scrollToTop">back to top<span
+              class="fa fa-arrow-up scrollToTopButton"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+
+</body>
+
+</html>
