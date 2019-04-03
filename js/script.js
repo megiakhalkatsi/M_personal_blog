@@ -86,6 +86,7 @@ for (var i = 0; i < menuItems.length; i++) {
 
 //Owl Carousel
 $(document).ready(function () {
+  
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
@@ -106,6 +107,21 @@ $(document).ready(function () {
       }
     }
   });
+
+    //parallax text set timeout
+    $('.parallax-text').hide();
+
+    setTimeout(function(){
+     $('.parallax-text').show();
+    }, 900);
+
+    //inner page title - set timeout
+    $('.blog-post__title').hide();
+
+    setTimeout(function(){
+     $('.blog-post__title').show();
+    }, 900);
+
 });
 
 //wow.js - scroll animations
@@ -132,13 +148,13 @@ if (scene) {
 
 //Preloader
 
-$('.body_preload').addClass('preloader-active');
+$('body').addClass('preloader-active');
 $(window).on('load', function () {
   setTimeout(function () {
     $('.preloader').fadeOut();
     $('.preloader-spinner').delay(1000).fadeOut('slow');
     $('body').removeClass('preloader-active');
-  }, 1000);
+  }, 700);
 });
 
 
@@ -162,3 +178,7 @@ $(window).on('load', function () {
     });
   }, false);
 })();
+
+
+
+
