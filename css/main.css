@@ -896,6 +896,7 @@ body.preloader-active {
 
 .source_list-item{
     list-style-type: disc;
+    list-style-position: inside;
 }
 .source_list-item-link{
     transition: .1s;

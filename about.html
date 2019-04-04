@@ -16,7 +16,84 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body>
+<style>
+  /* body {
+    position: relative; 
+  }
+  */
+  #fixed_scrolling_nav {
+    padding: 0;
+  }
+
+  .fixed_scrolling_nav {
+    position: fixed;
+    z-index: 1;
+    top: 150px;
+    right: 50px;
+  }
+
+  .fixed_scrolling_nav-item-link {
+    width: 60px;
+    background: #fff;
+    color: #17181e !important;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    transition: all .7s;
+  }
+
+  .fixed_scrolling_nav-item-link:hover {
+    color: #000 !important;
+    border: 1px solid #aaafaf;
+    background: #aaafaf;
+  }
+
+  .fixed_scrolling_nav-item-link.active {
+    color: #17181e !important;
+    border: 1px solid #3fa46a;
+    background: #3fa46a;
+  }
+
+  .fixed_scrolling_nav-icon {
+    font-size: 20px;
+  }
+
+  #section1 {
+    background-color: #ccffd8;
+  }
+  .avatar-img-container{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 1px solid #17181e;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: .7s;
+  }
+  .avatar-img{
+    width: 100%;
+    height: 100%;
+    background-image: url("images/myAvatar (4).svg");
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    transition: .7s;
+  }
+  .avatar-img-container:hover  .avatar-img{
+    background-image: url("images/myAvatar (3).svg");
+  }
+  .avatar-img-container:hover {
+    border: 1px solid #3fa46a;
+  }
+</style>
+
+<body data-spy="scroll" data-target=".fixed_scrolling_navbar" data-offset="50">
 
   <div class="preloader">
     <div class="preloader-spinner">
@@ -53,10 +130,77 @@
   </header>
 
   <main>
-    <div class="contact_form-fullSize">
+
+
+
+
+
+    <nav class="navbar bg-dark navbar-dark fixed_scrolling_navbar" id="fixed_scrolling_nav">
+      <ul class="navbar-nav fixed_scrolling_nav">
+        <li class="nav-item">
+          <!-- <a class="nav-link" href="#section1">Section 1</a> -->
+          <a class="nav-link fixed_scrolling_nav-item-link" href="#section1">
+            <i class="fixed_scrolling_nav-icon fa fa-user-o"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fixed_scrolling_nav-item-link" href="#section2">Section 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fixed_scrolling_nav-item-link" href="#section3">Section 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fixed_scrolling_nav-item-link" href="#section4">
+            <i class="fixed_scrolling_nav-icon fa fa-envelope-o"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="section1" class="container-fluid" style="padding:140px 0 300px">
       <div class="container">
         <div class="text-center">
-          <h4 class="post-box-title mb-5">contact</h4>
+          <h2 class="post-box-title mb-5">about me</h2>
+        </div>
+        <h3>Front-end Developer</h3>
+        <div class="avatar-img-container">
+            <!-- <img src="images/myAvatar (4).svg" alt="" class="avatar-img"> -->
+            <div class="avatar-img"></div>
+        </div>
+        <p>I design and code beautifully simple things, and I love what I do.!</p>
+        <p>I design and code beautifully simple things, and I love what I do.!</p>
+      </div>
+    </div>
+    <div id="section2" class="container-fluid bg-warning" style="padding:300px">
+      <h1>Section 2</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+        at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+        at the navigation bar while scrolling!</p>
+    </div>
+    <div id="section3" class="container-fluid bg-secondary" style="padding:300px">
+      <h1>Section 3</h1>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+        at the navigation bar while scrolling!</p>
+      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
+        at the navigation bar while scrolling!</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="contact_form-fullSize" id="section4">
+      <div class="container">
+        <div class="text-center">
+          <h class="post-box-title mb-5">contact</h2>
         </div>
         <div class="row">
           <div class="col-12 col-lg-4">
@@ -113,7 +257,7 @@
         </div>
 
         <div class="text-center">
-          <h4 class="post-box-title mb-5 mt-5">Get In Touch</h4>
+          <h2 class="post-box-title mb-5 mt-5">Get In Touch</h2>
         </div>
         <form class="needs-validation" novalidate>
           <div class="form-row">
@@ -167,7 +311,7 @@
           <button class="btn contact_form-btn text-uppercase mt-5 mb-3" type="submit">send message <span
               class="fa fa-long-arrow-right contact_form-btn-icon"></span></button>
         </form>
-        
+
       </div>
     </div>
   </main>
@@ -184,7 +328,8 @@
             </li>
             <li class="list-inline-item wow rotateInDownLeft"><a href="" class="social_icon-link fa fa-twitter"></a>
             </li>
-            <li class="list-inline-item wow rotateInDownLeft"><a href="https://www.instagram.com/megiakhalkatsi/" class="social_icon-link fa fa-instagram"></a>
+            <li class="list-inline-item wow rotateInDownLeft"><a href="https://www.instagram.com/megiakhalkatsi/"
+                class="social_icon-link fa fa-instagram"></a>
             </li>
             <li class="list-inline-item wow rotateInDownLeft"><a href="https://github.com/megiakhalkatsi"
                 class="social_icon-link fa fa-github"></a>
@@ -213,6 +358,28 @@
   <script src="js/parallax.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+    $("#fixed_scrolling_nav ul li a[href^='#']").on('click', function (e) {
+
+      // prevent default anchor click behavior
+      e.preventDefault();
+
+      // store hash
+      var hash = this.hash;
+
+      // animate
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function () {
+
+        // when done, add hash to url
+        // (default click behaviour)
+        window.location.hash = hash;
+      });
+
+    });
+  </script>
 
 </body>
 
