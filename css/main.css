@@ -1246,7 +1246,7 @@ body.preloader-active {
 }
 
 .contact_form-btn:hover {
-    background: #17181e;
+    background: transparent;
     border: 1px solid #50d2aa;
     color: #50d2aa;
 }

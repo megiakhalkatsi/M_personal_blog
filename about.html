@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Personal Blog</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,6 +22,25 @@
     position: relative; 
   }
   */
+  #section1,
+  #section2,
+  #section3 {
+    /* background-color: #ccffd8; */
+    padding: 140px 0 20px;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  #section1 {
+    background-color: #000000;
+    color: #aeaeae;
+  }
+
+  #section2 {
+    background-color: #0a291e;
+    color: #fff;
+  }
+
   #fixed_scrolling_nav {
     padding: 0;
   }
@@ -29,15 +49,16 @@
     position: fixed;
     z-index: 1;
     top: 150px;
-    right: 50px;
+    right: 10px;
   }
 
+
   .fixed_scrolling_nav-item-link {
-    width: 60px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     background: #fff;
     color: #17181e !important;
-    height: 60px;
-    line-height: 60px;
     padding: 0;
     text-align: center;
     border-radius: 50%;
@@ -48,8 +69,10 @@
 
   .fixed_scrolling_nav-item-link:hover {
     color: #000 !important;
-    border: 1px solid #aaafaf;
-    background: #aaafaf;
+    /* border: 1px solid #aaafaf;
+    background: #aaafaf; */
+    background: #83e9ca;
+    border: 1px solid #08fdd8;
   }
 
   .fixed_scrolling_nav-item-link.active {
@@ -59,22 +82,22 @@
   }
 
   .fixed_scrolling_nav-icon {
-    font-size: 20px;
+    font-size: 16px;
   }
 
-  #section1 {
-    background-color: #ccffd8;
-  }
-  .avatar-img-container{
-    width: 300px;
-    height: 300px;
+
+  .avatar-img-container {
+    width: 200px;
+    height: 200px;
     position: relative;
     border: 1px solid #17181e;
     border-radius: 50%;
     overflow: hidden;
     transition: .7s;
+    margin: auto;
   }
-  .avatar-img{
+
+  .avatar-img {
     width: 100%;
     height: 100%;
     background-image: url("images/myAvatar (4).svg");
@@ -82,15 +105,78 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     transition: .7s;
   }
-  .avatar-img-container:hover  .avatar-img{
+
+  .avatar-img-container:hover .avatar-img {
     background-image: url("images/myAvatar (3).svg");
   }
+
   .avatar-img-container:hover {
-    border: 1px solid #3fa46a;
+    border: 1px solid #83e9ca;
   }
+
+  .getInTouch_link {
+    color: #3fa46a;
+    transition: .3s;
+    /* font-weight: bold; */
+    border-bottom: 4px dotted transparent;
+    padding: 20px 0;
+  }
+
+  .getInTouch_link:hover {
+    color: #83e9ca;
+    border-bottom: 4px dotted #83e9ca;
+    padding: 6px 0;
+  }
+
+  /* Responsive
+================================================== */
+
+  /* mobile ---  320px - 767px    */
+
+  @media screen and (min-width: 320px) {}
+
+  /*  tablet  ---  768px - 991px    */
+
+  @media screen and (min-width:768px) {
+    .fixed_scrolling_nav-item-link {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+    }
+
+    .fixed_scrolling_nav-icon {
+      font-size: 18px;
+    }
+  }
+
+  /*  notebook small  ---  992px - 1999px    */
+
+  @media screen and (min-width:992px) {
+    #section1 {
+      padding: 140px 200px 20px;
+    }
+
+    .fixed_scrolling_nav {
+      right: 50px;
+    }
+
+    .fixed_scrolling_nav-item-link {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+
+    .fixed_scrolling_nav-icon {
+      font-size: 20px;
+    }
+  }
+
+  /*  large == notebook large  ---  1200px +   */
+
+  @media screen and (min-width: 1200px) {}
 </style>
 
 <body data-spy="scroll" data-target=".fixed_scrolling_navbar" data-offset="50">
@@ -132,63 +218,66 @@
   <main>
 
 
-
-
-
     <nav class="navbar bg-dark navbar-dark fixed_scrolling_navbar" id="fixed_scrolling_nav">
       <ul class="navbar-nav fixed_scrolling_nav">
         <li class="nav-item">
           <!-- <a class="nav-link" href="#section1">Section 1</a> -->
-          <a class="nav-link fixed_scrolling_nav-item-link" href="#section1">
+          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#section1">
             <i class="fixed_scrolling_nav-icon fa fa-user-o"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fixed_scrolling_nav-item-link" href="#section2">Section 2</a>
+          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#section2">Section 2</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fixed_scrolling_nav-item-link" href="#section3">Section 3</a>
+          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#section3">Section 3</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fixed_scrolling_nav-item-link" href="#section4">
+          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#section4">
             <i class="fixed_scrolling_nav-icon fa fa-envelope-o"></i>
           </a>
         </li>
       </ul>
     </nav>
 
-    <div id="section1" class="container-fluid" style="padding:140px 0 300px">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="post-box-title mb-5">about me</h2>
+    <div id="section1" class="container-fluid">
+      <div class="container text-center pl-5 pr-5">
+        <!-- <div class="text-center"> -->
+        <h2 class="post-box-title mb-5">about me</h2>
+        <!-- </div> -->
+        <h3>Hi, I’m Megi, I'm a Front-end Developer.</h3>
+        <p> Nice to meet you ^^</p>
+        <!-- <p>I design and code beautifully simple things, and I love what I do.!</p> -->
+        <div class="avatar-img-container mt-3 mb-3">
+          <!-- <img src="images/myAvatar (4).svg" alt="" class="avatar-img"> -->
+          <div class="avatar-img"></div>
         </div>
-        <h3>Front-end Developer</h3>
-        <div class="avatar-img-container">
-            <!-- <img src="images/myAvatar (4).svg" alt="" class="avatar-img"> -->
-            <div class="avatar-img"></div>
-        </div>
-        <p>I design and code beautifully simple things, and I love what I do.!</p>
-        <p>I design and code beautifully simple things, and I love what I do.!</p>
+        <!-- <h4>Hi, I’m Megi. Nice to meet you.</h4> -->
+        <p>I design and code beautifully simple things, and I love what I do. ^^ I enjoy each aspect, and love building
+          websites from start to finish, for clients from all over the world.</p>
+        <p>I'm available for remote work - if you would like to build something together, <a href="#section4"
+            class="fixed_scrolling-link getInTouch_link">get in touch</a>?</p>
       </div>
     </div>
-    <div id="section2" class="container-fluid bg-warning" style="padding:300px">
-      <h1>Section 2</h1>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
-        at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
-        at the navigation bar while scrolling!</p>
+    <div id="section2" class="container-fluid">
+      <div class="container text-center pl-5 pr-5">
+        <h2 class="post-box-title mb-5">my skills</h2>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+          look
+          at the navigation bar while scrolling!</p>
+        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+          look
+          at the navigation bar while scrolling!</p>
+      </div>
+
     </div>
-    <div id="section3" class="container-fluid bg-secondary" style="padding:300px">
+    <div id="section3" class="container-fluid bg-secondary">
       <h1>Section 3</h1>
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
         at the navigation bar while scrolling!</p>
       <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
         at the navigation bar while scrolling!</p>
     </div>
-
-
-
-
 
 
 
@@ -360,7 +449,7 @@
   <script src="js/script.js"></script>
 
   <script>
-    $("#fixed_scrolling_nav ul li a[href^='#']").on('click', function (e) {
+    $(".fixed_scrolling-link[href^='#']").on('click', function (e) {
 
       // prevent default anchor click behavior
       e.preventDefault();
