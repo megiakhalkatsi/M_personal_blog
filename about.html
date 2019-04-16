@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
   <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -33,12 +34,17 @@
 
   #section1 {
     background-color: #000000;
-    color: #aeaeae;
+    color: #ccc;
   }
 
   #section2 {
     background-color: #0a291e;
     color: #fff;
+  }
+
+  #section3 {
+    background-color: #272f36;
+    color: #ccc;
   }
 
   #fixed_scrolling_nav {
@@ -131,6 +137,101 @@
     padding: 6px 0;
   }
 
+  .download-button-link {
+    color: #aeaeae;
+    border: 1px solid #aeaeae;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    -moz-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+
+  .download-button-link:hover {
+    color: #fff;
+  }
+
+  /* //skills */
+  .skills_dev-icon{
+    font-size: 50px;
+    color: #3fa46a;
+    -moz-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+  .skills_dev-icon:hover{
+    color: #83e9ca;
+    /* transform: rotate(20deg);     */
+  }
+  .skill_progress{
+    font-size: 12px;
+    color: #3fa46a;
+  }
+  /* //education */
+
+
+  .education__container {
+    padding-bottom: 5px;
+  }
+
+  .education__click,
+  .education__click:focus {
+    color: var(--grey);
+    font-size: 14px;
+    padding-left: 30px;
+    border: none;
+    height: 60px;
+    background-color: #101418;
+    display: flex;
+    align-items: center;
+    text-transform: none;
+    width: 100%;
+  }
+
+  .education__title {
+    color: #3fa46a;
+    padding-right: 20px;
+    text-transform: uppercase;
+  }
+
+  .education__content {
+    color: #cccccc;
+    font-size: 14px;
+    background-color: #1d242a;
+    padding: 30px;
+    text-align: left;
+  }
+
+  .education__click.collapsed {
+    background-color: #303a42;
+    transition: 250ms;
+    -moz-transition: 250ms;
+    -ms-transition: 250ms;
+    -webkit-transition: 250ms;
+  }
+
+  .education__click.collapsed:hover {
+    background-color: #38434d;
+  }
+
+  .education__content--link {
+    color: #ccc;
+    /* font-weight: bold; */
+    letter-spacing: 2px;
+    transition: .2s;
+  }
+
+  .education__content--link:hover {
+    color: #ccc;
+    filter: brightness(80%);
+  }
+
+  .card {
+    background-color: inherit;
+  }
+
+
+
   /* Responsive
 ================================================== */
 
@@ -149,6 +250,12 @@
 
     .fixed_scrolling_nav-icon {
       font-size: 18px;
+    }
+    .skills_dev-icon{
+    font-size: 80px;
+    }
+    .skill_progress{
+    font-size: 14px;
     }
   }
 
@@ -262,21 +369,233 @@
     <div id="section2" class="container-fluid">
       <div class="container text-center pl-5 pr-5">
         <h2 class="post-box-title mb-5">my skills</h2>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-          look
-          at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-          look
-          at the navigation bar while scrolling!</p>
+        <div class="row">
+          <!-- <div class="col-12 col-md-6">
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+              look
+              at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+              look
+              at the navigation bar while scrolling!</p>
+          </div> -->
+          <!-- <div class="col-12 col-md-6">
+            <div class="row"> -->
+          <div class="col-4">
+            <div class="skills_item mt-2 mb-2">
+              <!-- <h3>HTML</h3> -->
+              <!-- <img src="images/html5.png" alt=""> -->
+              <i class="devicon-html5-plain-wordmark skills_dev-icon"></i>
+              <div class="uppercase-text skill_progress">skilled</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="skills_item mt-2 mb-2">
+              <!-- <h3>HTML</h3> -->
+              <!-- <img src="images/html5.png" alt=""> -->
+              <i class="devicon-css3-plain-wordmark skills_dev-icon"></i>
+              <div class="uppercase-text skill_progress">skilled</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="skills_item mt-2 mb-2">
+              <!-- <h3>HTML</h3> -->
+              <!-- <img src="images/html5.png" alt=""> -->
+              <i class="devicon-javascript-plain skills_dev-icon"></i>
+              <div class="uppercase-text skill_progress">semi-skilled</div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="skills_item mt-2 mb-2">
+              <!-- <h3>HTML</h3> -->
+              <!-- <img src="images/html5.png" alt=""> -->
+              <i class="devicon-html5-plain-wordmark skills_dev-icon"></i>
+              <div class="uppercase-text skill_progress">skilled</div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="skills_item mt-2 mb-2">
+              <!-- <h3>HTML</h3> -->
+              <!-- <img src="images/html5.png" alt=""> -->
+              <i class="devicon-html5-plain-wordmark skills_dev-icon"></i>
+              <div class="uppercase-text skill_progress">skilled</div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="skills_item mt-2 mb-2">
+              <!-- <h3>HTML</h3> -->
+              <!-- <img src="images/html5.png" alt=""> -->
+              <i class="devicon-html5-plain-wordmark skills_dev-icon"></i>
+              <div class="uppercase-text skill_progress">skilled</div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="skills_item mt-2 mb-2">
+              <!-- <h3>HTML</h3> -->
+              <!-- <img src="images/html5.png" alt=""> -->
+              <i class="devicon-html5-plain-wordmark skills_dev-icon"></i>
+              <div class="uppercase-text skill_progress">skilled</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skills_item mt-2 mb-2">
+              <!-- <h3>HTML</h3> -->
+              <!-- <img src="images/html5.png" alt=""> -->
+              <i class="devicon-html5-plain-wordmark skills_dev-icon"></i>
+              <div class="uppercase-text skill_progress">skilled</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skills_item mt-2 mb-2">
+              <!-- <h3>HTML</h3> -->
+              <!-- <img src="images/html5.png" alt=""> -->
+              <i class="devicon-html5-plain-wordmark skills_dev-icon"></i>
+              <div class="uppercase-text skill_progress">skilled</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skills_item mt-2 mb-2">
+              <!-- <h3>HTML</h3> -->
+              <!-- <img src="images/html5.png" alt=""> -->
+              <i class="devicon-html5-plain-wordmark skills_dev-icon"></i>
+              <div class="uppercase-text skill_progress">skilled</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skills_item mt-2 mb-2">
+              <!-- <h3>HTML</h3> -->
+              <!-- <img src="images/html5.png" alt=""> -->
+              <i class="devicon-html5-plain-wordmark skills_dev-icon"></i>
+              <div class="uppercase-text skill_progress">skilled</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skills_item mt-2 mb-2">
+              <!-- <h3>HTML</h3> -->
+              <!-- <img src="images/html5.png" alt=""> -->
+              <i class="devicon-html5-plain-wordmark skills_dev-icon"></i>
+
+              <div class="uppercase-text skill_progress">skilled</div>
+            </div>
+          </div>
+        <!-- </div>
+          </div> -->
+        </div>
+
+        
+
       </div>
 
     </div>
-    <div id="section3" class="container-fluid bg-secondary">
-      <h1>Section 3</h1>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
-        at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look
-        at the navigation bar while scrolling!</p>
+    <div id="section3" class="container-fluid">
+      <div class="container text-center pl-5 pr-5">
+        <h2 class="post-box-title mb-5">education</h2>
+
+        <!--  Education
+    ==================================================  -->
+
+        <div class="accordion mb-5" id="accordionExample">
+          <div class="education__container">
+            <div class="education__header" id="headingOne">
+              <div class="collapsed education__click" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                <span class="education__title">diploma in Mobile Programming iOS</span>
+                <span class="education__date">2019 - present</span>
+              </div>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body education__content">
+                <p>
+                  Student Of Professional Course of Mobile Programming iOS, <a href="http://geolab.edu.ge/en-us"
+                    class="education__content--link" target="_blank">Geolab - mobile and web applications Laboratory</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="education__container">
+            <div class="education__header" id="headingTwo">
+              <div class="collapsed education__click" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                <span class="education__title">master's degree in Computer Sciences</span>
+                <span class="education__date">2018 - present</span>
+              </div>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body education__content">
+                <p>
+                  Student of Master Program in New Media Technologies
+                  Engineering – Master in Computer Sciences, <a href="https://gipa.ge/eng"
+                    class="education__content--link" target="_blank">GIPA | Georgian
+                    Institute of Public Affairs.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" education__container">
+            <div class="education__header" id="headingThree">
+              <div class="collapsed education__click" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                <span class="education__title">diploma in web interface development</span>
+                <span class="education__date">2017 - 2018</span>
+              </div>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body education__content">
+                <p>
+                  Vocational Education Program in Web Development, <a href="http://itvet.ge/"
+                    class="education__content--link" target="_blank">Information technologies Academy.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" education__container">
+            <div class="education__header" id="headingFour">
+              <div class="collapsed education__click" data-toggle="collapse" data-target="#collapseFour"
+                aria-expanded="false" aria-controls="collapseFour">
+                <span class="education__title">Bachelor's Degree in Sociology</span>
+                <span class="education__date">2013 - 2017</span>
+              </div>
+
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body education__content">
+                <p>
+                  Bachelor of Social and Political Sciences in Sociology, <a href="https://www.tsu.ge/en"
+                    class="education__content--link" target="_blank">Ivane Javakhishvili Tbilisi State University.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="row">
+          <div class="col-12 col-md">
+            <div class="download-button mb-5">
+              <a href="/images/Megi Akhalkatsi.pdf" class="download-button-link" download>
+                <i class="fa fa-download"></i>
+                download resume
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md">
+            <div class="download-button mb-5">
+              <a href="#section4" class="download-button-link fixed_scrolling-link">
+                <i class="fa fa-paper-plane"></i>
+                hire me
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
 
@@ -440,6 +759,8 @@
       </div>
     </div>
   </footer>
+
+
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
