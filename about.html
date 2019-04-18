@@ -19,669 +19,6 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<style>
-  /* body {
-    position: relative; 
-  }
-  */
-  #section1,
-  #section2,
-  #section3,
-  #section4 {
-    /* background-color: #ccffd8; */
-    padding: 140px 0 20px;
-    min-height: 100vh;
-    width: 100%;
-  }
-
-  #section1 {
-    /* background-color: #080317; */
-    background-image: linear-gradient(#080317 70%, #04000e 100%);
-    /* background-color: #0a291e; */
-    color: #ccc;
-  }
-
-  #section2 {
-    /* background-color: #000; */
-    background-image: linear-gradient(#04000e 70%, #100223 100%);
-    /* background-color: #04000e; */
-    color: #fff;
-  }
-
-  #section3 {
-    background-image: linear-gradient(#100223 70%, #080317 100%);
-    color: #fff;
-  }
-
-  #section4 {
-    /* background-color: #080317; */
-    background-image: linear-gradient(#080317 70%, #100f13 100%);
-    color: #fff;
-  }
-
-  #fixed_scrolling_nav {
-    padding: 0;
-  }
-
-  .fixed_scrolling_nav {
-    position: fixed;
-    z-index: 1;
-    top: 150px;
-    right: 10px;
-  }
-
-
-  .fixed_scrolling_nav-item-link {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    background: #fff;
-    color: #17181e !important;
-    padding: 0!important;
-    text-align: center;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    border: 1px solid transparent;
-    transition: all .7s;
-  }
-
-  .fixed_scrolling_nav-item-link:hover {
-    color: #000 !important;
-    /* border: 1px solid #aaafaf;
-    background: #aaafaf; */
-    background: #50d2aa;
-    border: 1px solid #50d2aa;
-  }
-
-  .fixed_scrolling_nav-item-link.active {
-    color: #17181e !important;
-    border: 1px solid #3fa46a;
-    background: #3fa46a;
-  }
-
-  .fixed_scrolling_nav-icon {
-    font-size: 16px;
-  }
-
-
-  .avatar-img-container {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    border: 1px solid #17181e;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: .7s;
-    margin: auto;
-  }
-
-  .avatar-img {
-    width: 100%;
-    height: 100%;
-    background-image: url("images/myAvatar (4).svg");
-    background-size: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: .7s;
-  }
-
-  .avatar-img-container:hover .avatar-img {
-    background-image: url("images/myAvatar (3).svg");
-  }
-
-  .avatar-img-container:hover {
-    border: 1px solid #50d2aa;
-  }
-
-  .getInTouch_link {
-    color: #3fa46a;
-    transition: .3s;
-    /* font-weight: bold; */
-    border-bottom: 4px dotted transparent;
-    padding: 20px 0;
-  }
-
-  .getInTouch_link:hover {
-    color: #50d2aa;
-    border-bottom: 4px dotted #50d2aa;
-    padding: 6px 0;
-  }
-
-  .download-button-link {
-    color: #3fa46a;
-    border: 1px solid #3fa46a;
-    padding: 10px 25px;
-    text-transform: uppercase;
-    -moz-transition: all .5s ease-out;
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
-  }
-
-  .download-button-link:hover {
-    color: black;
-    /* border: 1px solid #50d2aa; */
-    background: #50d2aa;
-  }
-
-
-  /* //education */
-
-
-  .education__container {
-    padding-bottom: 5px;
-  }
-
-  .education__click,
-  .education__click:focus {
-    color: var(--grey);
-    font-size: 14px;
-    padding-left: 30px;
-    border: none;
-    height: 60px;
-    background-color: #000000;
-    border: 1px solid #000000;
-    display: flex;
-    align-items: center;
-    text-transform: none;
-    width: 100%;
-  }
-
-  .education__title {
-    color: #3fa46a;
-    padding-right: 20px;
-    text-transform: uppercase;
-  }
-
-  .education__content {
-    color: #cccccc;
-    font-size: 14px;
-    background-color: #0a291e;
-    padding: 30px;
-    text-align: left;
-  }
-
-  .education__click.collapsed {
-    /* background-color: #303a42; */
-    background-color: transparent;
-    border: 1px solid #0a291e;
-    transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -webkit-transition: .5s;
-  }
-
-  .education__click.collapsed:hover {
-    background-color: #0a291e;
-    border: 1px solid transparent;
-  }
-
-  .education__content--link {
-    color: #ccc;
-    /* font-weight: bold; */
-    letter-spacing: 2px;
-    transition: .2s;
-  }
-
-  .education__content--link:hover {
-    color: #ccc;
-    filter: brightness(80%);
-  }
-
-  .card {
-    background-color: inherit;
-  }
-
-
-
-  /* //skills */
-
-  .dev_icons_list {
-    display: flex;
-  }
-
-  .dev_icons-item {
-    margin: 30px 18px;
-  }
-
-  .dev_icons-item-icon {
-    font-size: 40px;
-    color: #17181e;
-    line-height: 60px;
-    transition: all 0.5s;
-  }
-
-  .dev_icons-item a {
-    position: relative;
-    display: block;
-    width: 60px;
-    height: 60px;
-    /* background: #3fa46a; */
-    background: #fff;
-    text-align: center;
-    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
-    transition: all 0.5s;
-    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
-  }
-
-  .dev_icons-item a::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: -20px;
-    height: 100%;
-    width: 20px;
-    /* background: #286e46; */
-    background: #b2b2b2;
-    transition: all 0.5s;
-    transform: rotate(0deg) skewY(-45deg);
-  }
-
-  .dev_icons-item a::after {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: -10px;
-    height: 20px;
-    width: 100%;
-    /* background: #36965f; */
-    background: #e5e5e5;
-    transition: all 0.5s;
-    transform: rotate(0deg) skewX(-45deg);
-  }
-
-  .dev_icons-item a:hover {
-    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
-    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
-  }
-
-  .dev_icons-item:hover .dev_icons-item-icon {
-    color: #fff;
-  }
-
-  .dev_icons-item:hover:nth-child(1) a {
-    background-color: #f16529;
-  }
-
-  .dev_icons-item:hover:nth-child(1) a::before {
-    background-color: #e44d26;
-  }
-
-  .dev_icons-item:hover:nth-child(1) a::after {
-    background-color: #db571f;
-  }
-
-  .dev_icons-item:hover:nth-child(2) a {
-    background-color: #1ba7e2;
-  }
-
-  .dev_icons-item:hover:nth-child(2) a::before {
-    background-color: #006ebd;
-  }
-
-  .dev_icons-item:hover:nth-child(2) a::after {
-    background-color: #66b4ef;
-  }
-
-  .dev_icons-item:hover:nth-child(3) a {
-    background-color: #e7c607;
-  }
-
-  .dev_icons-item:hover:nth-child(3) a::before {
-    background-color: #e7c507d5;
-  }
-
-  .dev_icons-item:hover:nth-child(3) a::after {
-    background-color: #fbd507;
-  }
-
-  .dev_icons-item:hover:nth-child(4) a {
-    background-color: #0077b5;
-  }
-
-  .dev_icons-item:hover:nth-child(4) a::before {
-    background-color: #005f90;
-  }
-
-  .dev_icons-item:hover:nth-child(4) a::after {
-    background-color: #1984bc;
-  }
-
-  .dev_icons-item:hover:nth-of-type(5) a {
-    background-color: #e4405f;
-  }
-
-  .dev_icons-item:hover:nth-of-type(5) a::before {
-    background-color: #b6334c;
-  }
-
-  .dev_icons-item:hover:nth-of-type(5) a::after {
-    background-color: #e6536f;
-  }
-  .dev_icons-item:hover:nth-child(6) a {
-    background-color: #f16529;
-  }
-
-  .dev_icons-item:hover:nth-child(6) a::before {
-    background-color: #e44d26;
-  }
-
-  .dev_icons-item:hover:nth-child(6) a::after {
-    background-color: #db571f;
-  }
-
-  .dev_icons-item:hover:nth-child(7) a {
-    background-color: #1ba7e2;
-  }
-
-  .dev_icons-item:hover:nth-child(7) a::before {
-    background-color: #006ebd;
-  }
-
-  .dev_icons-item:hover:nth-child(7) a::after {
-    background-color: #66b4ef;
-  }
-
-  .dev_icons-item:hover:nth-child(8) a {
-    background-color: #e7c607;
-  }
-
-  .dev_icons-item:hover:nth-child(8) a::before {
-    background-color: #e7c507d5;
-  }
-
-  .dev_icons-item:hover:nth-child(8) a::after {
-    background-color: #fbd507;
-  }
-
-  .dev_icons-item:hover:nth-child(9) a {
-    background-color: #0077b5;
-  }
-
-  .dev_icons-item:hover:nth-child(9) a::before {
-    background-color: #005f90;
-  }
-
-  .dev_icons-item:hover:nth-child(9) a::after {
-    background-color: #1984bc;
-  }
-
-  .dev_icons-item:hover:nth-of-type(10) a {
-    background-color: #e4405f;
-  }
-
-  .dev_icons-item:hover:nth-of-type(10) a::before {
-    background-color: #b6334c;
-  }
-
-  .dev_icons-item:hover:nth-of-type(10) a::after {
-    background-color: #e6536f;
-  }
-
-  .skill_progress {
-    font-size: 16px;
-    /* color: #3fa46a; */
-    color: #fff;
-    transition: all 0.5s;
-    padding-top: 30px;
-    opacity: 0;
-    position: absolute;
-    top: 80%;
-    left: 0;
-  }
-
-  .dev_icons-item:hover .skill_progress {
-    opacity: 1;
-  }
-
-
-  /* working experience */
-
-
-  .timeline {
-    list-style: none;
-    padding: 20px 0 20px;
-    position: relative;
-  }
-
-  .timeline:before {
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 3px;
-    background-color: #eeeeee;
-    left: 50%;
-    margin-left: -1.5px;
-  }
-
-  .timeline-item {
-    margin-bottom: 20px;
-    position: relative;
-  }
-
-  .timeline-item:before,
-  .timeline-item:after {
-    content: " ";
-    display: table;
-  }
-
-  .timeline-item:after {
-    clear: both;
-  }
-
-  .timeline-item:before,
-  .timeline-item:after {
-    content: " ";
-    display: table;
-  }
-
-  .timeline-item:after {
-    clear: both;
-  }
-
-  .timeline-panel {
-    width: 46%;
-    float: left;
-    border: 1px solid #d4d4d4;
-    border-radius: 2px;
-    padding: 20px;
-    position: relative;
-    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  }
-
-  .timeline-panel:before {
-    position: absolute;
-    top: 26px;
-    right: -15px;
-    display: inline-block;
-    border-top: 15px solid transparent;
-    border-left: 15px solid #ccc;
-    border-right: 0 solid #ccc;
-    border-bottom: 15px solid transparent;
-    content: " ";
-  }
-
-  .timeline-panel:after {
-    position: absolute;
-    top: 27px;
-    right: -14px;
-    display: inline-block;
-    border-top: 14px solid transparent;
-    border-left: 14px solid #fff;
-    border-right: 0 solid #fff;
-    border-bottom: 14px solid transparent;
-    content: " ";
-  }
-
-  .timeline-badge {
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-    text-align: center;
-    position: absolute;
-    top: 16px;
-    left: 50%;
-    margin-left: -25px;
-    background-color: #999999;
-    z-index: 10;
-    border-radius: 50%;
-  }
-
-  .timeline-inverted>.timeline-panel {
-    float: right;
-  }
-
-  .timeline-inverted>.timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
-  }
-
-  .timeline-inverted>.timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
-  }
-
-  .timeline-badge.success {
-    background-color: #3f903f !important;
-  }
-
-
-  .timeline-badge.danger {
-    background-color: #d9534f !important;
-  }
-
-
-  .timeline-title {
-    margin-top: 0;
-    color: inherit;
-  }
-
-  .timeline-body>p,
-  .timeline-body>ul {
-    margin-bottom: 0;
-  }
-
-  .timeline-body>p+p {
-    margin-top: 5px;
-  }
-
-  @media (max-width: 767px) {
-    ul.timeline:before {
-      left: 40px;
-    }
-
-    .timeline-panel {
-      width: calc(100% - 90px);
-      width: -moz-calc(100% - 90px);
-      width: -webkit-calc(100% - 90px);
-    }
-
-    .timeline-badge {
-      left: 15px;
-      margin-left: 0;
-      top: 16px;
-    }
-
-    .timeline-panel {
-      float: right;
-    }
-
-    .timeline-panel:before {
-      border-left-width: 0;
-      border-right-width: 15px;
-      left: -15px;
-      right: auto;
-    }
-
-    .timeline-panel:after {
-      border-left-width: 0;
-      border-right-width: 14px;
-      left: -14px;
-      right: auto;
-    }
-  }
-
-
-
-  /* Responsive
-================================================== */
-
-  /* mobile ---  320px - 767px    */
-
-  @media screen and (min-width: 320px) {}
-
-  /*  tablet  ---  768px - 991px    */
-
-  @media screen and (min-width:768px) {
-    .fixed_scrolling_nav-item-link {
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-    }
-
-    .fixed_scrolling_nav-icon {
-      font-size: 18px;
-    }
-
-    .skills_dev-icon {
-      font-size: 80px;
-    }
-
-    .dev_icons-item {
-      margin: 40px;
-    }
-
-    .skill_progress {
-      top: 110%;
-    }
-
-  }
-
-  /*  notebook small  ---  992px - 1999px    */
-
-  @media screen and (min-width:992px) {
-    #section1 {
-      padding: 140px 200px 20px;
-    }
-
-    .fixed_scrolling_nav {
-      right: 50px;
-    }
-
-    .fixed_scrolling_nav-item-link {
-      width: 60px;
-      height: 60px;
-      line-height: 60px;
-    }
-
-    .fixed_scrolling_nav-icon {
-      font-size: 20px;
-    }
-
-    .dev_icons-item-icon {
-      line-height: 80px;
-    }
-
-    .dev_icons-item a {
-      width: 80px;
-      height: 80px;
-    }
-  }
-
-  /*  large == notebook large  ---  1200px +   */
-
-  @media screen and (min-width: 1200px) {}
-</style>
-
 <body data-spy="scroll" data-target=".fixed_scrolling_navbar" data-offset="50">
 
   <div class="preloader">
@@ -724,39 +61,39 @@
     <nav class="navbar bg-dark navbar-dark fixed_scrolling_navbar" id="fixed_scrolling_nav">
       <ul class="navbar-nav fixed_scrolling_nav">
         <li class="nav-item">
-          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#section1">
+          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#about_section1">
             <i class="fixed_scrolling_nav-icon fa fa-user-o"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#section2">
-              <i class="fixed_scrolling_nav-icon fa fa-graduation-cap"></i>
+          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#about_section2">
+            <i class="fixed_scrolling_nav-icon fa fa-graduation-cap"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#section3">
-              <i class="fixed_scrolling_nav-icon fa fa-code"></i>
+          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#about_section3">
+            <i class="fixed_scrolling_nav-icon fa fa-code"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#section4">
-              <i class="fixed_scrolling_nav-icon fa fa-handshake-o"></i>
+          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#about_section4">
+            <i class="fixed_scrolling_nav-icon fa fa-handshake-o"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#section5">
-              <i class="fixed_scrolling_nav-icon fa fa-laptop"></i>
+          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#about_section5">
+            <i class="fixed_scrolling_nav-icon fa fa-laptop"></i>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#section6">
+          <a class="nav-link fixed_scrolling_nav-item-link fixed_scrolling-link" href="#about_section6">
             <i class="fixed_scrolling_nav-icon fa fa-envelope-o"></i>
           </a>
         </li>
       </ul>
     </nav>
 
-    <div id="section1" class="container-fluid">
+    <div id="about_section1" class="container-fluid">
       <div class="container text-center pl-5 pr-5">
         <h2 class="post-box-title mb-5 wow zoomIn">about me</h2>
         <h3>Hi, I’m Megi, I'm a Front-end Developer.</h3>
@@ -767,12 +104,12 @@
         </div>
         <p>I design and code beautifully simple things, and I love what I do. ^^ I enjoy each aspect, and love building
           websites from start to finish, for clients from all over the world.</p>
-        <p>I'm available for remote work - if you would like to build something together, <a href="#section6"
+        <p>I'm available for remote work - if you would like to build something together, <a href="#about_section6"
             class="fixed_scrolling-link getInTouch_link">get in touch</a>?</p>
       </div>
     </div>
 
-    <div id="section2" class="container-fluid">
+    <div id="about_section2" class="container-fluid">
       <div class="container text-center pl-5 pr-5">
         <h2 class="post-box-title mb-5 wow zoomIn">education</h2>
         <div class="accordion mb-5 wow fadeInLeft" id="accordionExample">
@@ -824,7 +161,7 @@
               <div class="card-body education__content">
                 <p>
                   Vocational Education Program in Web Development, <a href="http://itvet.ge/"
-                    class="education__content--link" target="_blank">Information technologies Academy.</a>
+                    class="education__content--link" target="_blank">Information Technologies Academy.</a>
                 </p>
               </div>
             </div>
@@ -860,7 +197,7 @@
           </div>
           <div class="col-12 col-md">
             <div class="download-button mb-5 wow fadeInDown">
-              <a href="#section6" class="download-button-link fixed_scrolling-link">
+              <a href="#about_section6" class="download-button-link fixed_scrolling-link">
                 <i class="fa fa-paper-plane"></i>
                 hire me
               </a>
@@ -870,52 +207,69 @@
       </div>
     </div>
 
-    <div id="section3" class="container-fluid">
+    <div id="about_section3" class="container-fluid">
       <div class="container text-center pl-5 pr-5">
         <h2 class="post-box-title mb-5 wow zoomIn">my skills</h2>
         <div class="dev_icons_list row">
           <div class="dev_icons-item col wow fadeInUp">
-            <a href="#"><i class="devicon-html5-plain-wordmark dev_icons-item-icon" aria-hidden="true"></i></a>
-            <div class="uppercase-text skill_progress">skilled</div>
+            <a href="#"><i class="devicon-html5-plain-wordmark colored dev_icons-item-icon" aria-hidden="true"></i></a>
+            <div class="skill_progress">skilled</div>
           </div>
           <div class="dev_icons-item col wow fadeInUp">
-            <a href="#"><i class="devicon-css3-plain-wordmark dev_icons-item-icon" aria-hidden="true"></i></a>
-            <div class="uppercase-text skill_progress">skilled</div>
+            <a href="#"><i class="devicon-css3-plain-wordmark colored dev_icons-item-icon" aria-hidden="true"></i></a>
+            <div class="skill_progress">skilled</div>
           </div>
           <div class="dev_icons-item col wow fadeInUp">
-            <a href="#"><i class="devicon-javascript-plain dev_icons-item-icon" aria-hidden="true"></i></a>
-            <div class="uppercase-text skill_progress">semi-skilled</div>
+            <a href="#"><i class="devicon-javascript-plain colored dev_icons-item-icon" aria-hidden="true"></i></a>
+            <div class="skill_progress">semi-skilled</div>
           </div>
           <div class="dev_icons-item col wow fadeInUp">
-            <a href="#"><i class="devicon-html5-plain-wordmark dev_icons-item-icon" aria-hidden="true"></i></a>
-            <div class="uppercase-text skill_progress">skilled</div>
+            <a href="#"><i class="devicon-bootstrap-plain-wordmark colored dev_icons-item-icon"
+                aria-hidden="true"></i></a>
+            <div class="skill_progress">skilled</div>
           </div>
           <div class="dev_icons-item col wow fadeInUp">
-            <a href="#"><i class="devicon-css3-plain-wordmark dev_icons-item-icon" aria-hidden="true"></i></a>
-            <div class="uppercase-text skill_progress">skilled</div>
+            <a href="#"><i class="devicon-sass-original colored dev_icons-item-icon" aria-hidden="true"></i></a>
+            <div class="skill_progress">skilled</div>
           </div>
           <div class="dev_icons-item col wow fadeInUp">
-            <a href="#"><i class="devicon-javascript-plain dev_icons-item-icon" aria-hidden="true"></i></a>
-            <div class="uppercase-text skill_progress">semi-skilled</div>
+            <a href="#"><i class="devicon-jquery-plain-wordmark colored dev_icons-item-icon" aria-hidden="true"></i></a>
+            <div class="skill_progress">semi-skilled</div>
           </div>
           <div class="dev_icons-item col wow fadeInUp">
-            <a href="#"><i class="devicon-html5-plain-wordmark dev_icons-item-icon" aria-hidden="true"></i></a>
-            <div class="uppercase-text skill_progress">skilled</div>
+            <a href="#"><i class="devicon-photoshop-plain colored dev_icons-item-icon" aria-hidden="true"></i></a>
+            <div class="skill_progress">skilled</div>
           </div>
           <div class="dev_icons-item col wow fadeInUp">
-            <a href="#"><i class="devicon-css3-plain-wordmark dev_icons-item-icon" aria-hidden="true"></i></a>
-            <div class="uppercase-text skill_progress">skilled</div>
+            <a href="#"><i class="devicon-illustrator-plain colored dev_icons-item-icon" aria-hidden="true"></i></a>
+            <div class="skill_progress">skilled</div>
           </div>
           <div class="dev_icons-item col wow fadeInUp">
-            <a href="#"><i class="devicon-javascript-plain dev_icons-item-icon" aria-hidden="true"></i></a>
-            <div class="uppercase-text skill_progress">semi-skilled</div>
+            <a href="#"><i class="devicon-git-plain-wordmark colored dev_icons-item-icon" aria-hidden="true"></i></a>
+            <div class="skill_progress">skilled</div>
+          </div>
+          <div class="dev_icons-item col wow fadeInUp">
+            <a href="#"><i class="devicon-mysql-plain-wordmark colored dev_icons-item-icon" aria-hidden="true"></i></a>
+            <div class="skill_progress">beginner</div>
+          </div>
+          <div class="dev_icons-item col wow fadeInUp">
+            <a href="#"><i class="devicon-wordpress-plain colored dev_icons-item-icon" aria-hidden="true"></i></a>
+            <div class="skill_progress">semi-skilled</div>
+          </div>
+          <div class="dev_icons-item col wow fadeInUp">
+            <a href="#"><i class="devicon-csharp-plain colored dev_icons-item-icon" aria-hidden="true"></i></a>
+            <div class="skill_progress">semi-skilled</div>
+          </div>
+          <div class="dev_icons-item col wow fadeInUp">
+            <a href="#"><i class="devicon-swift-plain-wordmark colored dev_icons-item-icon" aria-hidden="true"></i></a>
+            <div class="skill_progress">beginner</div>
           </div>
         </div>
       </div>
     </div>
 
 
-    <div id="section4" class="container-fluid">
+    <div id="about_section4" class="container-fluid">
       <div class="container text-center pl-5 pr-5">
         <h2 class="post-box-title mb-5 wow zoomIn">work experience</h2>
         <ul class="timeline">
@@ -927,11 +281,14 @@
                 <p><small class="text-muted">From 2018 Year November - till now</small></p>
               </div>
               <div class="timeline-body">
-                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis
-                  porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in
-                  elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti
-                  palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais
-                  bolis eu num gostis.</p>
+                <p>Front-end Developer at Betsolutions.
+                  I utilize HTML, CSS, Javascript and some frameworks to develop
+                  effective user interfaces on the company website. I work closely with web development and software
+                  design teams to update
+                  the website and internal web tools to make them more efficient. I am also
+                  responsible for creating innovative solutions to web design issues to help make the website more
+                  visually appealing and enhance usability.
+                </p>
               </div>
             </div>
           </li>
@@ -943,10 +300,11 @@
                 <p><small class="text-muted">From 2018 Year May - till November</small></p>
               </div>
               <div class="timeline-body">
-                <p>Front End Developer intern at Geolab.
-                   As a Front-End Developer Intern, I spent my time working alongside Geolab's designers and developers. 
-                   I meticulously built out design compositions into
-                  HTML/CSS/Javascript for integration into backend systems. I joined client meetings to experience client
+                <p>Front-end Developer intern at Geolab.
+                  As a Front-End Developer Intern, I spent my time working alongside Geolab's designers and developers.
+                  I meticulously built out design compositions into
+                  HTML/CSS/Javascript for integration into backend systems. I joined client meetings to experience
+                  client
                   presentations and design consultations and participated in monthly team discussions.</p>
               </div>
             </div>
@@ -956,10 +314,53 @@
       </div>
     </div>
 
+    <div id="about_section5" class="container-fluid">
+      <div class="container text-center pl-5 pr-5">
+        <h2 class="post-box-title mb-5 wow zoomIn">Portfolio</h2>
 
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="portfolio_item">
+              <img src="images/Sekabet.jpg" alt="sample38" class="portfolio_item-img" />
+              <div class="portfolio_item-caption">
+                <h2 class="portfolio-item-title">sekabet</h2>
+                <!-- <span class="portfolio-item-date">2018</span> -->
+                <p class="portfolio-item-text">Online gambling website.</p>
+                <p class="portfolio-item-text">#HTML #CSS #JAVASCRIPT #JQUERY #BOOTSTRAP #BEM</p>
+                <span class="portfolio-item-secondary-text">visit website</span>
+                <a href="http://newdesigne.sekabet.com/" target="_blank"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="portfolio_item">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample38.jpg" alt="sample39"
+                class="portfolio_item-img" />
+              <div class="portfolio_item-caption">
+                <h2 class="portfolio-item-title">How many <span>boards</span> </h2>
+                <p class="portfolio-item-text">Would the Mongols hoard, if the Mongol hordes got bored?.</p>
+                <span class="portfolio-item-secondary-text">visit website</span>
+                <a href="#"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="portfolio_item">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample40.jpg" alt="sample40"
+                class="portfolio_item-img" />
+              <div class="portfolio_item-caption">
+                <h2 class="portfolio-item-title">If your <span>knees</span> aren't <span>green</span></h2>
+                <p class="portfolio-item-text">By the end of the day, you ought to seriously re-examine your life.</p>
+                <span class="portfolio-item-secondary-text">visit website</span>
+                <a href="https://megiakhalkatsi.github.io/Geolab-internship/"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-    <div class="contact_form-fullSize" id="section6">
+    <div class="contact_form-fullSize" id="about_section6">
       <div class="container">
         <div class="text-center">
           <h class="post-box-title mb-5 wow zoomIn">contact</h2>
@@ -980,20 +381,18 @@
                   <div class="contact_info-icon">
                     <i class="fa fa-mobile-phone contact_info-icon--inner"></i>
                   </div>
-                  <p class="pt-3 contact_info-text">598 22 88 66</p>
+                  <p class="pt-3 contact_info-text">+995 598 22 88 66</p>
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-12">
                 <div class="contact_info pb-4">
                   <div class="contact_info-icon">
-                    <!-- <i class="fa fa-envelope contact_info-icon--inner"></i> -->
                     <div class="dots">
                       <div class="dot"></div>
                       <div class="dot"></div>
                       <div class="dot"></div>
                     </div>
                   </div>
-                  <!-- <p class="pt-3 contact_info-text">megi.akhalkatsi@gmail.com</p> -->
                   <a href="mailto:megi.akhalkatsi@gmail.com"
                     class="pt-3 contact_info--link">megi.akhalkatsi@gmail.com</a>
                 </div>
@@ -1013,7 +412,7 @@
             <div class="contact_map">
               <iframe class="map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190556.83414368174!2d44.69876667195004!3d41.73237417984777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x61d084ede2576ea3!2sTbilisi!5e0!3m2!1sen!2sge!4v1553500085068"
-                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                width="100%" height="450" frameborder="0" style="border:0" title="map" allowfullscreen></iframe>
             </div>
           </div>
         </div>
