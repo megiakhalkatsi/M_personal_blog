@@ -10,6 +10,21 @@ body {
     width: 100%;
 }
 
+.hidden {
+    display: none;
+}
+
+.noContent {
+    color: #000 !important;
+    background-color: transparent !important;
+    pointer-events: none;
+    border: inherit!important;
+}
+
+.noContent:focus {
+    outline: inherit!important;
+}
+
 /* -----------------------------Custom Scrollbar */
 
 ::-webkit-scrollbar {
@@ -456,6 +471,7 @@ body.preloader-active {
     padding: 15px 100px;
     border: 1px solid #17181e;
     transition: all .5s;
+    background: transparent;
 }
 
 .load_more-link:hover {

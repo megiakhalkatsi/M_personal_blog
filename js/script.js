@@ -7,6 +7,11 @@ $(document).ready(function () {
   $('.scrollToTop').click(function () {
     $('html, body').animate({ scrollTop: 0 }, 1000);
   });
+  // Load More
+  $('#loadMore').click(function () {
+    $("#loadMore").text("No Content").addClass("noContent");
+  });
+  
 });
 
 // Scrolling Effect
