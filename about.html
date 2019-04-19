@@ -189,7 +189,7 @@
         <div class="row">
           <div class="col-12 col-md">
             <div class="download-button mb-5 wow fadeInDown">
-              <a href="./images/Megi Akhalkatsi.pdf" class="download-button-link" download>
+              <a href="./images/Megi Akhalkatsi.pdf" class="main-button" download>
                 <i class="fa fa-download"></i>
                 download resume
               </a>
@@ -197,7 +197,7 @@
           </div>
           <div class="col-12 col-md">
             <div class="download-button mb-5 wow fadeInDown">
-              <a href="#about_section6" class="download-button-link fixed_scrolling-link">
+              <a href="#about_section6" class="main-button fixed_scrolling-link">
                 <i class="fa fa-paper-plane"></i>
                 hire me
               </a>
@@ -356,6 +356,43 @@
               </div>
             </div>
           </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="portfolio_item">
+              <img src="images/Sekabet.jpg" alt="sample38" class="portfolio_item-img" />
+              <div class="portfolio_item-caption">
+                <h2 class="portfolio-item-title">sekabet</h2>
+                <!-- <span class="portfolio-item-date">2018</span> -->
+                <p class="portfolio-item-text">Online gambling website.</p>
+                <p class="portfolio-item-text">#HTML #CSS #JAVASCRIPT #JQUERY #BOOTSTRAP #BEM</p>
+                <span class="portfolio-item-secondary-text">visit website</span>
+                <a href="http://newdesigne.sekabet.com/" target="_blank"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="portfolio_item">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample38.jpg" alt="sample39"
+                class="portfolio_item-img" />
+              <div class="portfolio_item-caption">
+                <h2 class="portfolio-item-title">How many <span>boards</span> </h2>
+                <p class="portfolio-item-text">Would the Mongols hoard, if the Mongol hordes got bored?.</p>
+                <span class="portfolio-item-secondary-text">visit website</span>
+                <a href="#"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="portfolio_item">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample40.jpg" alt="sample40"
+                class="portfolio_item-img" />
+              <div class="portfolio_item-caption">
+                <h2 class="portfolio-item-title">If your <span>knees</span> aren't <span>green</span></h2>
+                <p class="portfolio-item-text">By the end of the day, you ought to seriously re-examine your life.</p>
+                <span class="portfolio-item-secondary-text">visit website</span>
+                <a href="https://megiakhalkatsi.github.io/Geolab-internship/"></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -469,7 +506,7 @@
               </div>
             </div>
           </div>
-          <button class="btn contact_form-btn text-uppercase mt-5 mb-3" type="submit">send message <span
+          <button class="btn contact_form-btn main-button text-uppercase mt-5 mb-3" type="submit">send message <span
               class="fa fa-long-arrow-right contact_form-btn-icon"></span></button>
         </form>
 
@@ -514,7 +551,6 @@
   </footer>
 
 
-
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
@@ -522,28 +558,5 @@
   <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
 
-  <script>
-    $(".fixed_scrolling-link[href^='#']").on('click', function (e) {
-
-      // prevent default anchor click behavior
-      e.preventDefault();
-
-      // store hash
-      var hash = this.hash;
-
-      // animate
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1000, function () {
-
-        // when done, add hash to url
-        // (default click behaviour)
-        window.location.hash = hash;
-      });
-
-    });
-  </script>
-
 </body>
-
 </html>

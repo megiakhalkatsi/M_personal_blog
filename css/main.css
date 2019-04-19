@@ -1321,19 +1321,20 @@ body.preloader-active {
     padding: 6px 0;
 }
 
-.download-button-link {
-    color: #3fa46a;
-    border: 1px solid #3fa46a;
+.main-button {
+    color: #fff;
+    border: 1px solid #fff;
     padding: 10px 25px;
     text-transform: uppercase;
-    -moz-transition: all .5s ease-out;
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+    -moz-transition: all .4s ease-out;
+    -webkit-transition: all .4s ease-out;
+    transition: all .4s ease-out;
 }
 
-.download-button-link:hover {
+.main-button:hover {
     color: black;
     background: #50d2aa;
+    border: 1px solid #50d2aa;
 }
 
 /* ------------------------education */
@@ -1777,7 +1778,7 @@ body.preloader-active {
 .portfolio_item {
     position: relative;
     padding-bottom: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .portfolio_item-img {
@@ -1807,8 +1808,8 @@ body.preloader-active {
     right: 30px;
     bottom: 50%;
     left: 30px;
-    border-top: 1px solid rgba(63, 164, 106, 0.8);
-    border-bottom: 1px solid rgba(63, 164, 106, 0.8);
+    border-top: 1px solid rgba(63, 164, 106, 0.9);
+    border-bottom: 1px solid rgba(63, 164, 106, 0.9);
     content: '';
     opacity: 0;
     background-color: #3fa46a;
@@ -1921,19 +1922,7 @@ body.preloader-active {
 }
 
 .contact_form-btn {
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 10px 0;
     min-width: 200px;
-    -moz-transition: all .4s ease-out;
-    -webkit-transition: all .4s ease-out;
-    transition: all .4s ease-out;
-}
-
-.contact_form-btn:hover {
-    color: black;
-    background: #50d2aa;
-    border: 1px solid #50d2aa;
 }
 
 .contact_form-btn-icon {
