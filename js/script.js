@@ -9,7 +9,7 @@ $(document).ready(function () {
   });
   // Load More
   $('#loadMore').click(function () {
-    $("#loadMore").text("No Content").addClass("noContent");
+    $("#loadMore").text("No More Content").addClass("noContent");
   });
   
 });

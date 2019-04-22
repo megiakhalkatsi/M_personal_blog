@@ -773,6 +773,7 @@ body.preloader-active {
 
 .blog-post__title {
     font-size: 30px;
+    text-transform: capitalize;
 }
 
 .blog-post__info-link {
@@ -831,6 +832,7 @@ body.preloader-active {
 
 .blog-post__content-title {
     font-size: 24px;
+    text-transform: capitalize;
 }
 
 .blog-post__related-item {
@@ -2310,10 +2312,10 @@ body.preloader-active {
 
 @media screen and (min-width: 1200px) {
     .blog-post__content-img {
-        max-height: 20vw;
+        max-height: 25vw;
     }
     .blog-post__content-imagefull {
-        height: 20vw;
+        height: 25vw;
     }
     .blog-post__image {
         height: 25vw;
