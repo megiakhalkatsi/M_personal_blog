@@ -796,7 +796,7 @@ body.preloader-active {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 .blog-post__content {
@@ -2318,6 +2318,6 @@ body.preloader-active {
         height: 25vw;
     }
     .blog-post__image {
-        height: 25vw;
+        height: 30vw;
     }
 }
