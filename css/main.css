@@ -1360,7 +1360,6 @@ body.preloader-active {
 }
 
 .education__click, .education__click:focus {
-    color: var(--grey);
     font-size: 14px;
     padding-left: 30px;
     border: none;
