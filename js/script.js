@@ -8,10 +8,26 @@ $(document).ready(function () {
     $('html, body').animate({ scrollTop: 0 }, 1000);
   });
   // Load More
-  $('#loadMore').click(function () {
-    $("#loadMore").text("No More Content").addClass("noContent");
+  // $('#loadMore').click(function () {
+  //   $("#loadMore").text("No More Content").addClass("noContent");
+  // });
+
+  var counter = 0;
+  $("#loadMore").on("click", function () {
+    var items = $(".cards_wrapper").eq(0).clone();
+    items.hide();
+    items.insertBefore($(".hidden_items"));
+    items.slideDown();
+    var scrTop = $(window).scrollTop();
+    $("html, body").animate({
+      scrollTop: scrTop + 2000
+    }, 1200);
+    counter++;
+    if (counter > 0) {
+      $(this).hide();
+    }
   });
-  
+
 });
 
 // Scrolling Effect
@@ -91,7 +107,7 @@ for (var i = 0; i < menuItems.length; i++) {
 
 //Owl Carousel
 $(document).ready(function () {
-  
+
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
@@ -113,19 +129,19 @@ $(document).ready(function () {
     }
   });
 
-    //parallax text set timeout
-    $('.parallax-text').hide();
+  //parallax text set timeout
+  $('.parallax-text').hide();
 
-    setTimeout(function(){
-     $('.parallax-text').show();
-    }, 900);
+  setTimeout(function () {
+    $('.parallax-text').show();
+  }, 900);
 
-    //inner page title - set timeout
-    $('.blog-post__title').hide();
+  //inner page title - set timeout
+  $('.blog-post__title').hide();
 
-    setTimeout(function(){
-     $('.blog-post__title').show();
-    }, 900);
+  setTimeout(function () {
+    $('.blog-post__title').show();
+  }, 900);
 
 });
 
