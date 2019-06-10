@@ -2069,7 +2069,7 @@ body.preloader-active {
     .main_menu-item {
         box-sizing: border-box;
         width: 100%;
-        padding: 10px;
+        /* padding: 10px; */
         text-align: center;
     }
     .menu-icon {
