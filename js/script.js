@@ -17,10 +17,10 @@ $(document).ready(function () {
     var items = $(".cards_wrapper").eq(0).clone();
     items.hide();
     items.insertBefore($(".hidden_items"));
-    items.slideDown();
+    items.fadeIn();
     var scrTop = $(window).scrollTop();
     $("html, body").animate({
-      scrollTop: scrTop + 2000
+      scrollTop: scrTop + 400
     }, 1200);
     counter++;
     if (counter > 0) {
