@@ -1370,7 +1370,7 @@ body.preloader-active {
     font-size: 14px;
     padding-left: 30px;
     border: none;
-    height: 60px;
+    min-height: 60px;
     background-color: #000000;
     border: 1px solid #000000;
     display: flex;
@@ -2142,7 +2142,14 @@ body.preloader-active {
         left: -14px;
         right: auto;
     }
-}
+    .education__click, .education__click:focus {
+        padding-left: 5px;
+    }
+    
+    .education__title {
+        padding-right: 5px;
+    }
+    
 
 /*  tablet  ---  768px - 991px    */
 
@@ -2228,6 +2235,13 @@ body.preloader-active {
         border-right-width: 0;
         right: -14px;
         left: auto;
+    }
+    .education__click, .education__click:focus {
+        padding-left: 30px;
+    }
+    
+    .education__title {
+        padding-right: 20px;
     }
 }
 
