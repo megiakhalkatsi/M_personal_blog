@@ -1431,7 +1431,7 @@ body.preloader-active {
 }
 
 .dev_icons-item {
-    margin: 30px 18px;
+    margin: 40px 0;
 }
 
 .dev_icons-item-icon {
@@ -2150,9 +2150,9 @@ body.preloader-active {
     .education__title {
         padding-right: 5px;
     }
-    .dev_icons-item {
+    /* .dev_icons-item {
         margin: 30px 0 30px 18px;
-    }
+    } */
 }
 
 /*  tablet  ---  768px - 991px    */
@@ -2211,9 +2211,9 @@ body.preloader-active {
     .skills_dev-icon {
         font-size: 80px;
     }
-    .dev_icons-item {
+    /* .dev_icons-item {
         margin: 40px;
-    }
+    } */
     .skill_progress {
         top: 110%;
     }
